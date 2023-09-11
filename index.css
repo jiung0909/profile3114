@@ -1,0 +1,117 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: white;
+    width: 300px;
+    height: 600px;
+}
+button {
+    background-color: yellow;
+    width: 160px;
+    height: 40px;
+    border: 0px;
+    border-radius: 20px;
+}
+.back {
+    background-image: url(혁두1.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0px 0px;
+    display:flex;
+    justify-content: center;
+}
+.butt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.name {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.transformed {
+    background-image: url("혁두1.jpg");
+    transition: transform 1s ease-in-out;
+    width: 200px;
+    height: 200px;
+    border-radius: 300px;  
+    margin-top:130px;
+}
+.transformed:hover {
+    transform: scale(1.2);
+}
+.onediv {
+    background-image: url(혁두1.jpg);
+    width: 300px;
+    height: 300px;
+}
+
+.hamberger-container {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+.hamberger,
+.hamberger::before,
+.hamberger::after {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    transition: 0.5s;
+    background: pink;
+}
+.hamberger::before,
+.hamberger::after {
+    content: "";
+}
+.hamberger {
+    margin-left:90%;
+    top: 50%;
+}
+.hamberger::before {
+    top: -15px;
+}
+.hamberger::after {
+    top: 15px;
+}
+.toggle:checked ~ .hamberger::after {
+    top: 0;
+    transform: rotate(225deg);
+}
+.toggle:checked ~ .hamberger::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+.toggle:checked ~ .hamberger {
+    background: white;
+}
+.toggle {
+    opacity: 0;
+}
+
+.over {
+    overflow: scroll;
+    width: 300px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+button:active {
+    transform: scale(1.2);
+}
+    
+    
